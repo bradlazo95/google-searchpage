@@ -1,0 +1,492 @@
+/*Google Search Results Page CSS File*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container {
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 100%;
+        /*justify-items: center;
+        align-items: center;*/
+}
+
+/*** HEADER CSS Code ***/
+
+header {
+    /*position: relative; */
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    height: 115px;
+    grid-template: 50% 50% / 1fr 8fr 1fr;
+    align-content: center;
+    border-bottom-color: rgb(228, 228, 228);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+header div {
+    display: inline-block;
+ 
+}
+
+header ul li {
+    display: inline-block; 
+}
+
+.box1 {
+    align-self: center;
+    justify-self: center;
+}
+
+.box1 img {
+    height: 30px;
+    width: 80px;
+    display: block;
+    border: none;
+    margin-top: 25px;
+}
+
+.box2 {
+    display: inline-block;
+    align-self: center;
+    justify-self: left;
+    margin-top: 25px;
+}
+
+form {
+    position: relative; /* Look up why this helps center the mic icon */
+}
+
+.search {
+    width: 635px;
+    height: 45px;
+    border: 1px;
+    border-color: gainsboro;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 5px 5px 5px 5px;
+    padding-inline-start: 18px;
+    outline: none;
+    margin: 0 auto;
+    font: 16px arial,sans-serif;
+}
+
+.mic_icon {
+    position: absolute;
+    top: 10px;
+    right: 55px;
+    height: 25px;
+}
+
+.magnifying_glass {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    height: 20px;
+}
+
+.box3 {
+    display: inline-block;
+    margin-top: 3px;
+    padding-right: 15px;
+}
+
+.box3 ul li img {
+    padding: 5px;
+    vertical-align: middle;
+    filter: grayscale(100%);
+    opacity: 0.55;
+    cursor: pointer;
+}
+
+
+.nav {
+    display: inline-block;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    align-self: center;
+    justify-self: left;
+}
+
+.nav ul {
+    display: inline-block;
+    list-style-type: none; 
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.nav ul li {
+    color: rgb(0,0,0.87);
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.75;
+    text-decoration-color: rgb(0,0,0.87);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    outline-color: rgb(0,0,0.87);
+    font-family: 'Roboto', arial,sans-serif;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav .leftnav {
+    padding-inline-start: 3px;
+    padding-inline-end: 75px;
+}
+
+.leftnav .all {
+    color: #1A73E8;
+    font-weight: bold;
+    border-bottom: 3px solid #1A73E8;
+    padding: 0 15px 12px 15px;
+    text-decoration: none;
+}
+
+nav .rightnav {
+    padding-inline-start: 5px;
+}
+
+.rightnav li {
+    padding-right: 10px;
+}
+
+/*** MAIN CSS CODE ***/
+
+main {
+    display: inline-block;         /* Also inheritied from reset.css */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+.results {
+    height: 100%;
+    color: rgb(119, 119, 119);
+    font-size: 13px;
+    font-family: Roboto, arial, sans-serif;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+.people_suggest {
+    margin-inline-start: 150px;
+}
+
+.suggestions {
+    display: inline-block; /*Making this a block gave the elemnt an odd margin - google later why*/
+    margin: 0;
+    margin-bottom: 30px;
+    border: 0.5px solid rgb(228, 228, 228);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.suggestions td {
+    border-top: 0.5px solid rgb(228, 228, 228);
+    text-align: start;
+    padding: 0;
+    padding-left: 13px;
+    border-collapse: collapse;
+    width: 615px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: arial, sans-serif;
+    color: rgb(34, 34, 34);
+
+}
+
+.suggestions th {
+    text-align: start;
+    padding-left: 13px;
+    border-collapse: collapse;
+    width: 615px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: arial, sans-serif;
+    color: rgb(128, 128, 128);
+}
+
+
+
+main div hgroup a {
+    text-decoration: none;
+}
+
+main div {
+    display: inline-block;
+    width: 592px;
+    height: 87px;
+    margin-inline-start: 160px;
+    margin-bottom: 30px;
+}
+
+main div hgroup a h2 {
+    color: rgb(26, 13, 171);
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2.5px;
+}
+
+main div hgroup h3 {
+    color: rgb(0, 102, 33);
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 2.5px;
+}
+
+main div p {
+    color: rgb(84, 84, 84);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: arial, sans-serif;
+    line-height: 20px;
+}
+
+main div hgroup h2, h3, p {
+    margin: 0;
+}
+
+.related {
+    margin-bottom: 92px;
+}
+
+.related p {
+    color: #222;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.related ul {
+    display: inline-block;
+    list-style-type: none; 
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.related ul li {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.related ul li a {
+    color: rgb(26, 13, 171);
+    text-decoration: none;
+    text-decoration-color: none;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.related .first {
+    padding: 0px;
+    margin: 0 auto;
+    margin-right: 40px;
+    display: inline-block;
+    list-style-type: none; 
+}
+
+.related .second {
+    padding: 0px;
+    margin: 0 auto;
+    display: inline-block;
+    list-style-type: none; 
+}
+
+/*Next page navigation code*/
+
+.page_nav {
+    display: block;
+    margin-inline-start: 300px;
+    border: 0;
+}
+
+.page_nav tbody tr td {
+    border: 0;
+}
+
+.page_nav .no_page {
+    /*color: rgba(0, 0, 0, 0.87);*/
+    width: 28px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    background: url(https://www.google.com/images/nav_logo242.png) no-repeat;
+    background-position-x: -24px;
+    background-position-y: 0px;
+    overflow: hidden;
+}
+
+
+.page_nav .current_page {
+    color: rgba(0, 0, 0, 0.87);
+    width: 20px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    border-collapse: collapse;
+    background: url(https://www.google.com/images/nav_logo242.png) no-repeat;
+    background-position-x: -53px;
+    background-position-y: 0px;
+    overflow: hidden;
+}
+
+.page_nav .different_page {
+    color: rgba(0, 0, 0, 0.87);
+    width: 20px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    border-collapse: collapse;
+    background: url(https://www.google.com/images/nav_logo242.png) no-repeat;
+    background-position-x: -74px;
+    background-position-y: 0px;
+    overflow: hidden;
+}
+
+.page_nav .next_page {
+    color: rgba(0, 0, 0, 0.87);
+    width: 71px;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    border-collapse: collapse;
+    background: url(https://www.google.com/images/nav_logo242.png) no-repeat;
+    background-position-x: -96px;
+    background-position-y: 0px;
+    overflow: hidden;
+}
+
+.page_numbers {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-inline-start: 320px;
+    padding-left: 14px;
+
+}
+
+.page_numbers li {
+    display: inline-block;
+    list-style-type: none; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page_numbers li a {
+    text-decoration: none;
+    text-decoration-color: rgb(66, 133, 244);
+    cursor: pointer;
+}
+
+.one {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+   
+}
+
+.two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, a {
+    color: rgb(66, 133, 244);
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.next a {
+    color: rgb(66, 133, 244);
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 48px;
+
+}
+
+/**FOOTER CSS CODE**/
+
+footer {
+    width: 100%;
+    height: 65px;    
+    text-align: start;
+
+    background-color: rgb(242, 242, 242);
+    border-top-color: rgb(228, 228, 228);
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+footer .location {
+    display: inline-block;
+    margin-inline-start: 160px;
+}
+
+footer .location p {
+    display: inline-block;
+    color: rgb(95, 99, 104);
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: arial,sans-serif;
+    cursor: pointer;
+    text-decoration-color: rgb(95, 99, 104);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    font-size: 13px;
+}
+
+p strong {
+    color: #333;
+}
+
+footer .foot {
+    display: block;
+    margin-inline-start: 160px;
+    margin-top: 16px;
+}
+
+footer .foot section {
+    display: inline-block;
+}
+
+.foot section a {
+    display: inline-block;
+    color: rgb(95, 99, 104);
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: arial,sans-serif;
+    cursor: pointer;
+    text-decoration-color: rgb(95, 99, 104);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    font-size: 13px;
+
+    padding-right: 20px;
+}
